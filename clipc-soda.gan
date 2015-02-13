@@ -107,11 +107,13 @@ This would use DRS and facet mapping present in configuration file to covert ESG
             <notes><![CDATA[On top of Version 1.0, this would have the following:
 1. Using queried metadata to generate data questionnaire, for use in publication.
 2. SOLR publish and unpublish tool, which would use the data questionnaire, for publication. ]]></notes>
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+            <depend id="30" type="2" difference="0" hardness="Strong"/>
             <depend id="104" type="2" difference="0" hardness="Rubber"/>
             <depend id="106" type="2" difference="0" hardness="Rubber"/>
             <depend id="128" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="28" name="HTTP_fileserver" color="#8cb6ce" meeting="false" start="2013-01-01" duration="1" complete="0" expand="true">
+        <task id="28" name="HTTP_fileserver" color="#8cb6ce" meeting="false" start="2015-03-26" duration="1" complete="0" expand="true">
             <notes><![CDATA[With ESGF-style authentication.  For serving online data and serving status message page to user.
 ]]></notes>
             <depend id="130" type="2" difference="0" hardness="Strong"/>
@@ -130,20 +132,20 @@ This would use DRS and facet mapping present in configuration file to covert ESG
             <depend id="126" type="2" difference="0" hardness="Strong"/>
             <depend id="130" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="126" name="SODA_Scheduler-1.0" color="#8cb6ce" meeting="false" start="2015-04-08" duration="1" complete="0" expand="true">
+        <task id="126" name="SODA_Scheduler-1.0" color="#8cb6ce" meeting="false" start="2015-04-08" duration="3" complete="0" expand="true">
             <notes><![CDATA[Exteremely minimal FCFS scheduling, no checks for multiple requests for same resources etc.
 Just to demonstrate queing capability.]]></notes>
             <depend id="130" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="128" name="SODA_WPS_service-1.0" color="#8cb6ce" meeting="false" start="2015-03-26" duration="1" complete="0" expand="true">
+        <task id="128" name="SODA_WPS_service-1.0" color="#8cb6ce" meeting="false" start="2015-03-26" duration="3" complete="0" expand="true">
             <notes><![CDATA[Extremely minimal WPS service capable of advertising services provided. Only for download workflow, not publication.
 ]]></notes>
         </task>
-        <task id="30" name="SODA_database_version-1.0" color="#8cb6ce" meeting="false" start="2013-01-01" duration="1" complete="0" expand="true">
+        <task id="30" name="SODA_database_version-1.0" color="#8cb6ce" meeting="false" start="2015-03-26" duration="1" complete="0" expand="true">
             <notes><![CDATA[Minimal database schema for ]]></notes>
             <depend id="130" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="130" name="Version 1.2" color="#8cb6ce" meeting="false" start="2015-04-09" duration="1" complete="0" expand="true">
+        <task id="130" name="Version 1.2" color="#8cb6ce" meeting="false" start="2015-04-13" duration="1" complete="0" expand="true">
             <notes><![CDATA[This milestone would have the following, on top of Version 1.1
 
 1. Minimal WPS, with download workflow (only), including responses for humans and programs.
@@ -168,44 +170,44 @@ Just to demonstrate queing capability.]]></notes>
             <depend id="52" type="2" difference="0" hardness="Strong"/>
             <depend id="135" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="0" name="DRS_and_config_checker" color="#8cb6ce" meeting="false" start="2015-04-10" duration="3" complete="0" expand="true">
+        <task id="0" name="DRS_and_config_checker" color="#8cb6ce" meeting="false" start="2015-04-14" duration="3" complete="0" expand="true">
             <notes><![CDATA[Check syntax correctness of configuration file and check validity of
 and check validity of incoming queries.]]></notes>
         </task>
-        <task id="135" name="SODA Auth" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="0" expand="true">
+        <task id="135" name="SODA Auth" color="#8cb6ce" meeting="false" start="2015-04-14" duration="1" complete="0" expand="true">
             <notes><![CDATA[Based on ESGF authentication, but would still need to cook the necessary components into SODA, and update it if needed, to continue to conform to ESGF.]]></notes>
         </task>
-        <task id="4" name="SODA_Scheduler" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="0" expand="true">
+        <task id="4" name="SODA_Scheduler" color="#8cb6ce" meeting="false" start="2015-04-14" duration="1" complete="0" expand="true">
             <notes><![CDATA[Cache expiration logic.
 Retrieval scheduling; should handle mulitple requests for same data.
 Retrieved data freshness; in case of multilpe requests, the requested data should be considered as fresh as the last retrieval request etc.]]></notes>
         </task>
-        <task id="26" name="SODA_WPS_service" color="#8cb6ce" meeting="false" start="2015-04-10" duration="20" complete="0" expand="true">
+        <task id="26" name="SODA_WPS_service" color="#8cb6ce" meeting="false" start="2015-04-14" duration="20" complete="0" expand="true">
             <notes><![CDATA[WPS service for publication and retrieval. 
 Interactions by Cog (for scheduling) and the wget script (for auth, prior to download?)]]></notes>
         </task>
-        <task id="32" name="Plugin_design_and_integration" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="0" expand="true">
+        <task id="32" name="Plugin_design_and_integration" color="#8cb6ce" meeting="false" start="2015-04-14" duration="1" complete="0" expand="true">
             <notes><![CDATA[Designing the plugin system.]]></notes>
-            <task id="34" name="SODA_plugin_integration" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="0" expand="true">
+            <task id="34" name="SODA_plugin_integration" color="#8cb6ce" meeting="false" start="2015-04-14" duration="1" complete="0" expand="true">
                 <notes><![CDATA[Support for external plugins;
 A plugin contract.]]></notes>
             </task>
         </task>
-        <task id="52" name="SODA Publisher" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="0" expand="true">
+        <task id="52" name="SODA Publisher" color="#8cb6ce" meeting="false" start="2015-04-14" duration="1" complete="0" expand="true">
             <notes><![CDATA[This is a component external to SODA. It needs to be colocated on the datanode. It queries SODA and obtains metadata pertaining to the publication to be done and creates data questionnaire.
 It then uses the publish script which refers to the newly created data questionnaire, and performs a SOLR publication.]]></notes>
         </task>
-        <task id="31" name="SODA_database_implementation" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="0" expand="true"/>
-        <task id="37" name="Development_env_setup" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="0" expand="true"/>
-        <task id="9" name="GRIB_NetCDF_converter" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="0" expand="true">
+        <task id="31" name="SODA_database_implementation" color="#8cb6ce" meeting="false" start="2015-04-14" duration="1" complete="0" expand="true"/>
+        <task id="37" name="Development_env_setup" color="#8cb6ce" meeting="false" start="2015-04-14" duration="1" complete="0" expand="true"/>
+        <task id="9" name="GRIB_NetCDF_converter" color="#8cb6ce" meeting="false" start="2015-04-14" duration="1" complete="0" expand="true">
             <notes><![CDATA[Gather know-how for GRIB to NetCDF coversion and code in into the backend plugin.]]></notes>
         </task>
-        <task id="11" name="GRIB_NetCDF_conversion-howto" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="0" expand="true"/>
-        <task id="14" name="Facet_mapping_doc_for_EURO4M" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="0" expand="true"/>
-        <task id="15" name="CoG_integration" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="0" expand="true">
+        <task id="11" name="GRIB_NetCDF_conversion-howto" color="#8cb6ce" meeting="false" start="2015-04-14" duration="1" complete="0" expand="true"/>
+        <task id="14" name="Facet_mapping_doc_for_EURO4M" color="#8cb6ce" meeting="false" start="2015-04-14" duration="1" complete="0" expand="true"/>
+        <task id="15" name="CoG_integration" color="#8cb6ce" meeting="false" start="2015-04-14" duration="1" complete="0" expand="true">
             <notes><![CDATA[CoG would simply make a SODA request for the data on the authenticated user's behalf, and return the service URL to the user and a message indicating the handover to SODA.  Minimal error handling in the event of unresponsive SODA.]]></notes>
         </task>
-        <task id="17" name="Notification_system" color="#8cb6ce" meeting="false" start="2015-04-10" duration="1" complete="0" expand="true">
+        <task id="17" name="Notification_system" color="#8cb6ce" meeting="false" start="2015-04-14" duration="1" complete="0" expand="true">
             <notes><![CDATA[To communicate to the use when the requested data is ready for retrieval. ]]></notes>
         </task>
     </tasks>
