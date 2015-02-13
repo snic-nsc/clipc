@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="ClipC-SODA" company="" webLink="http://" view-date="2014-12-21" view-index="0" gantt-divider-location="428" resource-divider-location="300" version="2.0" locale="en_IN">
+<?xml version="1.0" encoding="UTF-8"?><project name="ClipC-SODA" company="" webLink="http://" view-date="2015-02-15" view-index="0" gantt-divider-location="428" resource-divider-location="300" version="2.0" locale="en_IN">
     <description/>
     <view zooming-state="default:6" id="gantt-chart">
         <field id="tpd3" name="Name" width="54" order="0"/>
@@ -156,6 +156,10 @@ Just to demonstrate queing capability.]]></notes>
             <depend id="0" type="2" difference="0" hardness="Strong"/>
             <depend id="4" type="2" difference="0" hardness="Strong"/>
             <depend id="9" type="2" difference="0" hardness="Strong"/>
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+            <depend id="17" type="2" difference="0" hardness="Strong"/>
             <depend id="26" type="2" difference="0" hardness="Strong"/>
             <depend id="31" type="2" difference="0" hardness="Strong"/>
             <depend id="32" type="2" difference="0" hardness="Strong"/>
@@ -182,26 +186,26 @@ Interactions by Cog (for scheduling) and the wget script (for auth, prior to dow
         </task>
         <task id="32" name="Plugin_design_and_integration" color="#8cb6ce" meeting="false" start="2015-04-06" duration="1" complete="0" expand="true">
             <notes><![CDATA[Designing the plugin system.]]></notes>
+            <task id="34" name="SODA_plugin_integration" color="#8cb6ce" meeting="false" start="2015-04-06" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Support for external plugins;
+A plugin contract.]]></notes>
+            </task>
         </task>
         <task id="52" name="SODA Publisher" color="#8cb6ce" meeting="false" start="2015-04-06" duration="1" complete="0" expand="true">
             <notes><![CDATA[This is a component external to SODA. It needs to be colocated on the datanode. It queries SODA and obtains metadata pertaining to the publication to be done and creates data questionnaire.
 It then uses the publish script which refers to the newly created data questionnaire, and performs a SOLR publication.]]></notes>
         </task>
         <task id="31" name="SODA_database_implementation" color="#8cb6ce" meeting="false" start="2015-04-06" duration="1" complete="0" expand="true"/>
-        <task id="34" name="SODA_plugin_integration" color="#8cb6ce" meeting="false" start="2015-04-06" duration="1" complete="0" expand="true">
-            <notes><![CDATA[Support for external plugins;
-A plugin contract.]]></notes>
-        </task>
         <task id="37" name="Development_env_setup" color="#8cb6ce" meeting="false" start="2015-04-06" duration="1" complete="0" expand="true"/>
         <task id="9" name="GRIB_NetCDF_converter" color="#8cb6ce" meeting="false" start="2015-04-06" duration="1" complete="0" expand="true">
             <notes><![CDATA[Gather know-how for GRIB to NetCDF coversion and code in into the backend plugin.]]></notes>
         </task>
-        <task id="11" name="GRIB_NetCDF_conversion-howto" color="#8cb6ce" meeting="false" start="2013-01-01" duration="1" complete="0" expand="true"/>
-        <task id="14" name="Facet_mapping_doc_for_EURO4M" color="#8cb6ce" meeting="false" start="2013-01-01" duration="1" complete="0" expand="true"/>
-        <task id="15" name="CoG_integration" color="#8cb6ce" meeting="false" start="2013-01-01" duration="1" complete="0" expand="true">
+        <task id="11" name="GRIB_NetCDF_conversion-howto" color="#8cb6ce" meeting="false" start="2015-04-06" duration="1" complete="0" expand="true"/>
+        <task id="14" name="Facet_mapping_doc_for_EURO4M" color="#8cb6ce" meeting="false" start="2015-04-06" duration="1" complete="0" expand="true"/>
+        <task id="15" name="CoG_integration" color="#8cb6ce" meeting="false" start="2015-04-06" duration="1" complete="0" expand="true">
             <notes><![CDATA[CoG would simply make a SODA request for the data on the authenticated user's behalf, and return the service URL to the user and a message indicating the handover to SODA.  Minimal error handling in the event of unresponsive SODA.]]></notes>
         </task>
-        <task id="17" name="Notification_system" color="#8cb6ce" meeting="false" start="2013-01-01" duration="1" complete="0" expand="true">
+        <task id="17" name="Notification_system" color="#8cb6ce" meeting="false" start="2015-04-06" duration="1" complete="0" expand="true">
             <notes><![CDATA[To communicate to the use when the requested data is ready for retrieval. ]]></notes>
         </task>
     </tasks>
